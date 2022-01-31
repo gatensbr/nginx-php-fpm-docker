@@ -1,12 +1,12 @@
-FROM php:7.4.5-fpm-alpine3.11
+FROM php:8.0.15-fpm-alpine3.15
 
-LABEL maintainer="Ric Harvey <ric@ngd.io>"
+LABEL maintainer="Riley Gatensby <rileysihc@gmail.com>"
 
 ENV php_conf /usr/local/etc/php-fpm.conf
 ENV fpm_conf /usr/local/etc/php-fpm.d/www.conf
 ENV php_vars /usr/local/etc/php/conf.d/docker-vars.ini
 
-ENV NGINX_VERSION 1.16.1
+ENV NGINX_VERSION 1.20.2
 ENV LUA_MODULE_VERSION 0.10.14
 ENV DEVEL_KIT_MODULE_VERSION 0.3.0
 ENV GEOIP2_MODULE_VERSION 3.2
